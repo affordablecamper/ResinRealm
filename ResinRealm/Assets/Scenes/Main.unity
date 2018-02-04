@@ -151,7 +151,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &529137672
 Prefab:
@@ -206,7 +206,6 @@ GameObject:
   - component: {fileID: 902076801}
   - component: {fileID: 902076800}
   - component: {fileID: 902076799}
-  - component: {fileID: 902076798}
   m_Layer: 0
   m_Name: LobbyCam
   m_TagString: MainCamera
@@ -214,14 +213,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &902076798
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 81717555662194836, guid: 6bb0329448bc1ae4089a4c049444b56e,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 902076797}
-  m_Enabled: 1
 --- !u!124 &902076799
 Behaviour:
   m_ObjectHideFlags: 0
@@ -429,15 +420,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4387618902373282, guid: 6bb0329448bc1ae4089a4c049444b56e, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4387618902373282, guid: 6bb0329448bc1ae4089a4c049444b56e, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4387618902373282, guid: 6bb0329448bc1ae4089a4c049444b56e, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4387618902373282, guid: 6bb0329448bc1ae4089a4c049444b56e, type: 2}
       propertyPath: m_LocalRotation.w
@@ -445,7 +436,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4387618902373282, guid: 6bb0329448bc1ae4089a4c049444b56e, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1030704813877324, guid: 6bb0329448bc1ae4089a4c049444b56e, type: 2}
       propertyPath: m_IsActive
