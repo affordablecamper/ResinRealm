@@ -22,7 +22,7 @@ public class PlayerSetup : NetworkBehaviour {
 
         }
 
-
+        
        
 	}
 

@@ -10,8 +10,7 @@ namespace UnityStandardAssets._2D
         [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
         [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
         [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
-        public float fallMultiplier = 2.5f;
-        public float lowJumpMultiplier = 2f;
+
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
         private bool m_Grounded;            // Whether or not the player is grounded.
@@ -20,7 +19,7 @@ namespace UnityStandardAssets._2D
         private Animator m_Anim;            // Reference to the player's animator component.
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
-        public bool fireonJump;
+
         private void Awake()
         {
             // Setting up references.
@@ -30,27 +29,6 @@ namespace UnityStandardAssets._2D
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
         }
 
-
-        private void Update()
-        {
-
-            if (fireonJump == true)
-            {
-
-                if (m_Rigidbody2D.velocity.y < 0)
-                {
-                    m_Rigidbody2D.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-
-                }
-                else if (m_Rigidbody2D.velocity.y > 0)
-                {
-                    m_Rigidbody2D.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
-
-                }
-
-            }
-
-        }
 
         private void FixedUpdate()
         {
@@ -117,11 +95,8 @@ namespace UnityStandardAssets._2D
                 // Add a vertical force to the player.
                 m_Grounded = false;
                 m_Anim.SetBool("Ground", false);
-                fireonJump = true;
-
-
+                m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
             }
-            else fireonJump = false;
         }
 
 
