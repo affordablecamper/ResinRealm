@@ -58,4 +58,12 @@ MonoBehaviour:
   HeightMultiplier: 10
   HeightAddition: 25
   smooth: 12.5
+  tileCoal: {fileID: 1465251959687088, guid: fa9a8f85f4b815f42b0d59ff3f426808, type: 2}
+  tileIron: {fileID: 1513315741341904, guid: ad857994fb1608e419db1328a933c4ff, type: 2}
+  tileRuby: {fileID: 1875276914588590, guid: 5f4ec61a55daa6a48a1b50c35621b4cb, type: 2}
+  tileGold: {fileID: 1208553542878500, guid: 6fe81ddc647a1454a8ec400a1e7d549e, type: 2}
+  percCoal: 2
+  percRuby: 0.075
+  percGold: 0.3125
+  percIron: 0.75
   seed: 0

@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 61336501744719960}
   m_Layer: 0
   m_Name: Coal
-  m_TagString: Untagged
+  m_TagString: TileCoal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

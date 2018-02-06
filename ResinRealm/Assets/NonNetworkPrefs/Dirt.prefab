@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 61207260730922222}
   m_Layer: 0
   m_Name: Dirt
-  m_TagString: Untagged
+  m_TagString: TileDirt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

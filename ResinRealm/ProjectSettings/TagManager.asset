@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - TileStone
+  - TileDirt
+  - TileCoal
+  - TileRuby
+  - TileIron
+  - TileGrass
+  - TileGold
   layers:
   - Default
   - TransparentFX

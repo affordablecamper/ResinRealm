@@ -123,6 +123,7 @@ public class ChunkManager : MonoBehaviour {
 
 
                     GameObject newResourceTile = Instantiate(selectedTile, t.transform.position, Quaternion.identity) as GameObject;
+                    newResourceTile.transform.parent = this.gameObject.transform;
                     Destroy(t);
 
                 }
