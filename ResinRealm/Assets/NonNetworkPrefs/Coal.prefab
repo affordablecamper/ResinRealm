@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33257741804811488}
   - component: {fileID: 23567340321011870}
   - component: {fileID: 61336501744719960}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Coal
   m_TagString: TileCoal
   m_Icon: {fileID: 0}

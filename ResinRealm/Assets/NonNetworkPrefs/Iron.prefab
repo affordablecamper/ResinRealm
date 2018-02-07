@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33405080045004990}
   - component: {fileID: 23300275058833426}
   - component: {fileID: 61492580750562140}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Iron
   m_TagString: TileIron
   m_Icon: {fileID: 0}

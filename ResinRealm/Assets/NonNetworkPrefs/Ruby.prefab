@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33459304869515648}
   - component: {fileID: 23933761748962792}
   - component: {fileID: 61710667391388164}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ruby
   m_TagString: TileRuby
   m_Icon: {fileID: 0}

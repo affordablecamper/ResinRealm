@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4591030477600324}
   - component: {fileID: 114292371772052586}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ChunkManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}

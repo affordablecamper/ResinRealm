@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33806013097822588}
   - component: {fileID: 23674838692157010}
   - component: {fileID: 61336119045382906}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Gold
   m_TagString: TileGold
   m_Icon: {fileID: 0}
