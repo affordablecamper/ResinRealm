@@ -1,2 +1,5 @@
 -fix shooting(fix pointer click issue and make it so it can actully mine blocks health etc)
 
+James:
+finish the character sprites all ready by saturday
+finish the blocks by saturday
