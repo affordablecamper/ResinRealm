@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 33130351452292432}
   - component: {fileID: 23058538532103242}
   - component: {fileID: 61207260730922222}
+  - component: {fileID: 114670484061476144}
+  - component: {fileID: 114313420939677732}
   m_Layer: 11
   m_Name: Dirt
   m_TagString: TileDirt
@@ -36,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1458134243458764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.082, y: 10.26094, z: -0.07846214}
+  m_LocalPosition: {x: 43.3626, y: 204.95998, z: -0.07846214}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -109,3 +111,47 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114313420939677732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1458134243458764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 210
+    i1: 46
+    i2: 194
+    i3: 200
+    i4: 67
+    i5: 181
+    i6: 158
+    i7: 100
+    i8: 9
+    i9: 80
+    i10: 157
+    i11: 47
+    i12: 28
+    i13: 117
+    i14: 119
+    i15: 109
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &114670484061476144
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1458134243458764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc105bd6a1dd024d8531564739ad1bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100

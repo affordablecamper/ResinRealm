@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 33533530453578668}
   - component: {fileID: 23706888703348478}
   - component: {fileID: 61040465903168728}
+  - component: {fileID: 114648751329720992}
+  - component: {fileID: 114827375472096818}
   m_Layer: 11
   m_Name: Grass
   m_TagString: TileGrass
@@ -36,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1179419154925580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.186, y: 10.26094, z: -0.07846214}
+  m_LocalPosition: {x: 46.51986, y: 203.1116, z: -0.07846214}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -109,3 +111,47 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114648751329720992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1179419154925580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc105bd6a1dd024d8531564739ad1bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+--- !u!114 &114827375472096818
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1179419154925580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 89
+    i1: 143
+    i2: 190
+    i3: 208
+    i4: 255
+    i5: 28
+    i6: 252
+    i7: 148
+    i8: 59
+    i9: 253
+    i10: 37
+    i11: 251
+    i12: 42
+    i13: 56
+    i14: 50
+    i15: 218
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0

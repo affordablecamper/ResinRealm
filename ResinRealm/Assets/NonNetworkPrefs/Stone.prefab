@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 33397691826676296}
   - component: {fileID: 23160037113710270}
   - component: {fileID: 61687778231096004}
+  - component: {fileID: 114477660061590026}
+  - component: {fileID: 114782672027713256}
   m_Layer: 11
   m_Name: Stone
   m_TagString: TileStone
@@ -36,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1077832553559720}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.9987564, y: 10.26094, z: -0.07846214}
+  m_LocalPosition: {x: 46.944363, y: 204.845, z: -0.07846214}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -109,3 +111,47 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114477660061590026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077832553559720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc105bd6a1dd024d8531564739ad1bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+--- !u!114 &114782672027713256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077832553559720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 12
+    i1: 151
+    i2: 253
+    i3: 193
+    i4: 83
+    i5: 213
+    i6: 16
+    i7: 164
+    i8: 104
+    i9: 157
+    i10: 166
+    i11: 198
+    i12: 199
+    i13: 154
+    i14: 18
+    i15: 241
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0

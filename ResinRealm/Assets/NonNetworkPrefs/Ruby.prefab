@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 33459304869515648}
   - component: {fileID: 23933761748962792}
   - component: {fileID: 61710667391388164}
+  - component: {fileID: 114417922618673342}
+  - component: {fileID: 114906254931546070}
   m_Layer: 11
   m_Name: Ruby
   m_TagString: TileRuby
@@ -36,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1875276914588590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.281, y: 169.03545, z: -0.07846214}
+  m_LocalPosition: {x: 48.129, y: 203.686, z: -0.07846214}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -109,3 +111,47 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114417922618673342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1875276914588590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc105bd6a1dd024d8531564739ad1bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+--- !u!114 &114906254931546070
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1875276914588590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 95
+    i1: 78
+    i2: 198
+    i3: 26
+    i4: 85
+    i5: 218
+    i6: 166
+    i7: 164
+    i8: 138
+    i9: 27
+    i10: 80
+    i11: 195
+    i12: 86
+    i13: 33
+    i14: 180
+    i15: 203
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0

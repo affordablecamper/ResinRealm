@@ -30,7 +30,7 @@ public class PlayerSetup : NetworkBehaviour {
     public override void PreStartClient()
     {
         GetComponent<NetworkAnimator>().SetParameterAutoSend(0, true);
-        Debug.Log("Anim set");
+        
     }
 
 }

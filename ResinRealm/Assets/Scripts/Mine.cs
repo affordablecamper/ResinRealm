@@ -11,7 +11,10 @@ public class Mine : MonoBehaviour {
 	 Transform firePoint;
     public Vector2 mousePosition;
     public Vector2 firePointPosition;
-	// Use this for initialization
+    public Camera _Camera;
+    BlockHealth health;
+
+    // Use this for initialization
 	void Awake () {
 		firePoint = transform.Find ("FirePoint");
 		if (firePoint == null) {
@@ -21,11 +24,12 @@ public class Mine : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-         mousePosition = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
+         mousePosition = new Vector2(_Camera.ScreenToWorldPoint(Input.mousePosition).x, _Camera.ScreenToWorldPoint(Input.mousePosition).y);
          firePointPosition = new Vector2(firePoint.position.x, firePoint.position.y);
         if (fireRate == 0) {
 			if (Input.GetButtonDown ("Fire1")) {
-				Shoot();
+
+                Shoot();
 			}
 		}
 		else {
@@ -37,12 +41,14 @@ public class Mine : MonoBehaviour {
 	}
 	
 	void Shoot () {
-		
-		RaycastHit2D hit = Physics2D.Raycast (firePointPosition, mousePosition-firePointPosition, range);
-		Debug.DrawLine (firePointPosition, (mousePosition-firePointPosition)*range, Color.cyan);
+       
+        RaycastHit2D hit = Physics2D.Raycast(firePointPosition, mousePosition - firePointPosition, range);
+        Debug.DrawLine(firePointPosition, (mousePosition - firePointPosition) * range, Color.cyan);
         if (hit.collider.gameObject.layer == 11) {
-			Debug.DrawLine (firePointPosition, hit.point, Color.red);
-			Debug.Log ("We hit " + hit.collider.name + " and did " + Damage + " damage.");
+
+                health = hit.collider.GetComponent<BlockHealth>();
+               // Debug.Log("We hit " + hit.collider.name + " and did " + Damage + " damage.");
+                health.shot(Damage);
 		}
 	}
 }

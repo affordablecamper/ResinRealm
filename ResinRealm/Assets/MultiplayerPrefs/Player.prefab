@@ -31,7 +31,7 @@ GameObject:
   - component: {fileID: 114728744055275946}
   - component: {fileID: 114526271378330734}
   - component: {fileID: 114090664370754540}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4955813740340900}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4961794516695916}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CeilingCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4806850582029994}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 20825844788823342}
   - component: {fileID: 124438395367213182}
   - component: {fileID: 81717555662194836}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PlayerCam
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4304787022088148}
   - component: {fileID: 212195101701388728}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TempBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1949075776532520}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0010977817, y: 0.28640798, z: -3.3695056}
+  m_LocalPosition: {x: -0.0010977817, y: 0.28640798, z: -0.13}
   m_LocalScale: {x: 0.1902028, y: 0.19020312, z: 0.33695057}
   m_Children:
   - {fileID: 4304787022088148}
@@ -218,7 +218,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 65.9
+  field of view: 164
   orthographic: 1
   orthographic size: 14.5
   m_Depth: -0.1
@@ -347,10 +347,11 @@ MonoBehaviour:
   Damage: 10
   whatToHit:
     serializedVersion: 2
-    m_Bits: 0
-  range: 50
+    m_Bits: 4294967295
+  range: 10000
   mousePosition: {x: 0, y: 0}
   firePointPosition: {x: 0, y: 0}
+  _Camera: {fileID: 20825844788823342}
 --- !u!114 &114387151337746768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -455,6 +456,7 @@ MonoBehaviour:
   componentsToDisable:
   - {fileID: 114032501012759760}
   - {fileID: 20825844788823342}
+  - {fileID: 114090664370754540}
   gameObjectComponentsToDisable:
   - {fileID: 1670999992583752}
   - {fileID: 1698974384533728}

@@ -2,8 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class ChunkManager : MonoBehaviour {
+using UnityEngine.Networking;
+public class ChunkManager : NetworkBehaviour {
 
     public GameObject DirtTile;
     public GameObject GrassTile;
@@ -25,7 +25,7 @@ public class ChunkManager : MonoBehaviour {
     public float percRuby;
     public float percGold;
     public float percIron;
-
+    //SeedGen __seedGen;
 
 
 
@@ -38,9 +38,10 @@ public class ChunkManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-
+       // __seedGen = GameObject.FindGameObjectWithTag("Player").GetComponent<SeedGen>();
         Generate();
-        seed = UnityEngine.Random.Range(-1000000f, 1000000f);
+        
+        
     }
 
     private void Generate()
@@ -72,7 +73,8 @@ public class ChunkManager : MonoBehaviour {
 
                 }
 
-                GameObject newTile = Instantiate(selectedTile, Vector3.zero, Quaternion.identity) as GameObject;
+                var newTile = Instantiate(selectedTile, Vector3.zero, Quaternion.identity) as GameObject;
+                NetworkServer.Spawn(newTile);
                 newTile.transform.parent = this.gameObject.transform;
                 newTile.transform.localPosition = new Vector3(i, j);
                 
@@ -122,7 +124,9 @@ public class ChunkManager : MonoBehaviour {
                 if (selectedTile != null) {
 
 
-                    GameObject newResourceTile = Instantiate(selectedTile, t.transform.position, Quaternion.identity) as GameObject;
+                    Debug.Log("test");
+                    var newResourceTile = Instantiate(selectedTile, t.transform.position, Quaternion.identity) as GameObject;
+                    NetworkServer.Spawn(newResourceTile);
                     newResourceTile.transform.parent = this.gameObject.transform;
                     Destroy(t);
 

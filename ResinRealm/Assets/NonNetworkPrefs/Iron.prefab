@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 33405080045004990}
   - component: {fileID: 23300275058833426}
   - component: {fileID: 61492580750562140}
+  - component: {fileID: 114764160859640088}
+  - component: {fileID: 114891247054248616}
   m_Layer: 11
   m_Name: Iron
   m_TagString: TileIron
@@ -36,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1513315741341904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.859737, y: 169.01088, z: -0.07846214}
+  m_LocalPosition: {x: 44.636116, y: 203.13814, z: -0.07846214}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -109,3 +111,47 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114764160859640088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1513315741341904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc105bd6a1dd024d8531564739ad1bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+--- !u!114 &114891247054248616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1513315741341904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 173
+    i1: 133
+    i2: 121
+    i3: 148
+    i4: 251
+    i5: 22
+    i6: 8
+    i7: 228
+    i8: 25
+    i9: 219
+    i10: 19
+    i11: 40
+    i12: 169
+    i13: 51
+    i14: 196
+    i15: 255
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
